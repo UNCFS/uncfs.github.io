@@ -1,0 +1,30 @@
+#Site settings
+
+# SEO settings
+title: CFS 44 
+author: Committee on World Food Security (CFS)
+email: cfs@fao.org
+description: > # this means to ignore newlines until "baseurl:"
+  Website of the 44th Session of the Commitee on World Food Security
+keywords: United Nations, Food Security, Nutrition, Committee on World Food Security, CFS
+
+# Author settings
+author:
+    name:            Committee on World Food Security
+    facebook:         UN.CFS
+    twitter:          UN_CFS
+    github:           UNCFS
+    medium:           UN_CFS
+    email:           cfs@fao.org
+
+# Timezones
+timezone:           Europe/Rome
+
+# SASS settings
+sass:
+  style: compressed
+
+
+plugins:
+  - jekyll-maps
+  - jekyll-email-protect
