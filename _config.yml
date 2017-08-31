@@ -22,6 +22,7 @@ timezone:           Europe/Rome
 
 # SASS settings
 sass:
+  sass_dir: sass
   style: compressed
 
 

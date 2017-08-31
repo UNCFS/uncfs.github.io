@@ -3,7 +3,6 @@ layout: page
 title: Logistics
 permalink: /logistics/
 ---
-
 <h1 class="page-title">{{ page.title | escape }}</h1>
 <div class="section">
 	<div class="row">
@@ -15,21 +14,39 @@ permalink: /logistics/
 			<div class="card green lighten-2">
 				<div class="card-content white-text">
 					<span class="card-title">Useful links</span>
-		
+					<ul>
+						<li>
 							<a href="http://www.fao.org/fileadmin/templates/cfs/Docs1516/cfs43/CFS43_Green_Accomodation_Rome.jpg" target="_blank" title="Initiates file download">Eco-friendly accommodation in Rome</a>
+						</li>
+						<li>
 							<a href="http://www.trenitalia.com/cms/v/index.jsp?vgnextoid=ad1ce14114bc9110VgnVCM10000080a3e90aRCRD" target="_blank">Trenitalia</a>
+						</li>
+						<li>
 							<a href="http://www.atac.roma.it/index.asp?lingua=ENG" target="_blank">Rome bus and metro</a>
+						</li>
+						<li>
 							<a href="http://en.turismoroma.it/" target="_blank">Tourist information</a>
-							<a href="http://www.meteoam.it/" target="_blank">Weather</a>
+						</li>
+						<li>
+							<a href="http://www.ilmeteo.it/" target="_blank">Weather</a>
+						</li>
+						<li>
 							<a href="http://www.xe.com/ucc/" target="_blank">Exchange rate</a>
-	
-					
+						</li>
+						<li>
+							<a href="http://www.esteri.it/visti/index_eng.asp">Italian Visa information</a>
+						</li>
+					</ul>
 				</div>
 			</div>
 			
 		</div>
 		
 	</div>
-	
 </div>
 <div class="divider"></div>
+<div class="row">
+	<div class="col s12">
+
+		</div>
+	</div>
