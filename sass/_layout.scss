@@ -1,0 +1,14 @@
+#index-banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(https://uncfs.github.io/CFS43Timetable/images/wallpaper-min.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 90vh;
+}
+.full{
+    min-height: 60vh;
+}

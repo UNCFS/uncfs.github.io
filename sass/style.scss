@@ -3,7 +3,7 @@
 ---
 
 @import "materialize/materialize";
-@import "main";
+@import "_main";
 @import "_helpers"; // contains variables and mixins
 @import "_typography"; // contains all typography rules
 @import "_layout"; // contains layout things

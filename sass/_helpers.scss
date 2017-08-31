@@ -1,0 +1,22 @@
+$green: #24b57a;
+$blue: #1a7aac;
+$orange: #f8a033;
+$light-blue: #50c8e5;
+$dark-grey: #9e9e9e;
+
+.dark-grey{
+    @extend .grey-text, .darken-4;
+}
+
+.green {
+    background: $green !important;
+}
+.green-text{
+    color: $green !important;
+}
+.blue{
+    background: $blue !important;
+}
+.blue-text{
+    color: $blue !important;
+}
