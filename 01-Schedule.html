@@ -19,9 +19,11 @@ permalink: /schedule/
     <div id="9Oct" class="col s12 tab-content">
         <ul>
         {% for event in site.data.events %}
+        {% if event.DAY == "9-Oct" %}
         <li>
-        {{ event.TITLE }}
+        <strong> {{event.START}} - {{event.END}}</strong> -- {{ event.TYPE }} - {{ event.TITLE }}
         </li>
+        {% endif %} 
         {% endfor %}
         </ul>
       
