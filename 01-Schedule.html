@@ -18,24 +18,36 @@ permalink: /schedule/
     </div>
     <div id="9Oct" class="col s12 tab-content">
         <h5> 10:00 - 13.00 </h5>
-            <div class="row">
-      {% for event in site.data.nine %}
-        {% if event.START == "10:00"%}
+        
+        {% for event in site.data.nine %}
+          {% if event.START == "10:00"%}
+            {% SessionCard %}
+              {{ event.TITLE }}
+              {{ event.ROOM }}
+            
+            {% endSessionCard %}
+            
+          {% endif %}
+        {% endfor%}
+        
+    <!--        <div class="row">-->
+    <!--  {% for event in site.data.nine %}-->
+    <!--    {% if event.START == "10:00"%}-->
 
-          <div class="col s12">
-              <div class="card">
-                <div class="card-content blue-text">
-                  <span class="card-title">{{ event.TITLE }}</span>
-                  <p>{{event.TYPE}}</p>
-                </div>
-                <div class="card-action">
-                  <strong>{{ event.ROOM }}  </strong> 
-                </div>
-              </div>
-            </div>
-    {% endif %}
-    {% endfor %}
-        </div>
+    <!--      <div class="col s12">-->
+    <!--          <div class="card">-->
+    <!--            <div class="card-content blue-text">-->
+    <!--              <span class="card-title">{{ event.TITLE }}</span>-->
+    <!--              <p>{{event.TYPE}}</p>-->
+    <!--            </div>-->
+    <!--            <div class="card-action">-->
+    <!--              <strong>{{ event.ROOM }}  </strong> -->
+    <!--            </div>-->
+    <!--          </div>-->
+    <!--        </div>-->
+    <!--{% endif %}-->
+    <!--{% endfor %}-->
+    <!--    </div>-->
       </div>
     <div id="10Oct" class="col s12 tab-content">Content 2</div>
     <div id="11Oct" class="col s12 tab-content">Content 3</div>
