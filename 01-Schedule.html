@@ -17,30 +17,25 @@ permalink: /schedule/
       </ul>
     </div>
     <div id="9Oct" class="col s12 tab-content">
-      {% for event in site.data.events %}
-        {% if event.DAY == "9-Oct" %}
-          <div class="row">
+        <h5> 10:00 - 13.00 </h5>
+            <div class="row">
+      {% for event in site.data.nine %}
+        {% if event.START == "10:00"%}
+
           <div class="col s12">
-            {% if event.TYPE == "Session" %}
               <div class="card">
                 <div class="card-content blue-text">
-            {% endif %}
-            
-            {% if event.TYPE == "SideEvent" %}
-              <div class="card">
-                <div class="card-content green-text">
-            {% endif %}
                   <span class="card-title">{{ event.TITLE }}</span>
-                  <p> {{ event.ORGANIZERS }} </p>
+                  <p>{{event.TYPE}}</p>
                 </div>
                 <div class="card-action">
-                  <strong>{{ event.TYPE }}  </strong> |  {{event.START}} - {{event.END}}
+                  <strong>{{ event.ROOM }}  </strong> 
                 </div>
               </div>
             </div>
-    </div>
     {% endif %}
     {% endfor %}
+        </div>
       </div>
     <div id="10Oct" class="col s12 tab-content">Content 2</div>
     <div id="11Oct" class="col s12 tab-content">Content 3</div>
