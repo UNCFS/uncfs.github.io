@@ -14,3 +14,17 @@
 .tab-content{
     margin: 20px 0;
 }
+
+.tabs .tab a{
+    color: $green;
+}
+.tabs .tab a:hover,.tabs .tab a.active {
+	background-color:transparent;
+	color: $green;
+}
+.tabs .tab.disabled a,.tabs .tab.disabled a:hover {
+	color:rgba(102,147,153,0.7);	
+}
+.tabs .indicator {
+	background-color: $green;
+}

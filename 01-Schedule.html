@@ -8,11 +8,11 @@ permalink: /schedule/
     <div class="row">
     <div class="col s12">
       <ul class="tabs">
-        <li class="tab col s2"><a class="active"href="#9Oct">9 Oct</a></li>
-        <li class="tab col s2"><a  href="#10Oct">10 Oct</a></li>
-        <li class="tab col s2"><a href="#11Oct">11 Oct</a></li>
-        <li class="tab col s2"><a href="#12Oct">12 Oct</a></li>
-        <li class="tab col s2"><a href="#13Oct">13 Oct</a></li>
+        <li class="tab green-text col s2"><a class="active green-text" href="#9Oct">9 Oct</a></li>
+        <li class="tab green-text col s2"><a   class="green-text" href="#10Oct">10 Oct</a></li>
+        <li class="tab green-text col s2"><a class="green-text"  href="#11Oct">11 Oct</a></li>
+        <li class="tab green-text col s2"><a class="green-text" href="#12Oct">12 Oct</a></li>
+        <li class="tab green-text col s2"><a class="green-text" href="#13Oct">13 Oct</a></li>
 
       </ul>
     </div>
@@ -22,13 +22,13 @@ permalink: /schedule/
           <div class="row">
           <div class="col s12">
             {% if event.TYPE == "Session" %}
-              <div class="card blue darken-1">
-                <div class="card-content white-text">
+              <div class="card">
+                <div class="card-content blue-text">
             {% endif %}
             
             {% if event.TYPE == "SideEvent" %}
-              <div class="card green darken-1">
-                <div class="card-content white-text">
+              <div class="card">
+                <div class="card-content green-text">
             {% endif %}
                   <span class="card-title">{{ event.TITLE }}</span>
                   <p> {{ event.ORGANIZERS }} </p>
