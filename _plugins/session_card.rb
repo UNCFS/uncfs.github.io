@@ -10,7 +10,7 @@ module Jekyll
               <div class="card">
                 <div class="card-content blue-text">
                   <span class="card-title"> #{title} </span>
-                  <p>Session Type</p>
+                  <p>#{title}</p>
                 </div>
                 <div class="card-action">
                   <strong>#{room} </strong> 

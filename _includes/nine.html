@@ -1,0 +1,36 @@
+    <div class="row">
+    {% for event in site.data.nine %}
+    {% if event.START == "10:00"%}
+    
+    <div class="col s12">
+      <div class="card">
+        <div class="card-content blue-text">
+          <span class="card-title">{{ event.TITLE }}</span>
+          <p>{{event.TYPE}}</p>
+        </div>
+        <div class="card-action">
+          <strong>{{ event.ROOM }}  </strong> 
+        </div>
+      </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+    
+    {% for event in site.data.nine %}
+        {% if event.START == "13:00" %}
+        <div class="col s12">
+          <div class="card">
+        <div class="card-content green-text">
+          <span class="card-title">{{event.ID }} - {{ event.TITLE }}: {{ event.SUBTITLE}}</span>
+          <p><strong>Organizers: </strong>{{ event.ORGANIZERS }}</p>
+        </div>
+        <div class="card-action">
+          {{event.TYPE }}<strong> {{ event.ROOM }} Room </strong> 
+        </div>
+      </div>
+      </div>
+        {% endif %}
+    {% endfor %}
+    </div>
+    
+    
