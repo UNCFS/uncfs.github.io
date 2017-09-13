@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: timetable
+title: Schedule
+permalink: /
 ---
-
-9-13 October 2017, Rome, Italy
