@@ -6,11 +6,16 @@
       <div class="card">
         {% if event.Type == "Session" %}<div class="card-content blue white-text"> {% endif%}
                 {% if event.Type == "Side Event" %}<div class="card-content green white-text"> {% endif%}
-          <span class="card-title">{{ event.Title }}</span>
+          <span class="card-title">{{ event.Title }} {% if event.Type == "Side Event" %} - {{ event.Subtitle}} {%endif%}</span>
           <p>{{event.Time}}</p>
+          {% if event.Type == "Side Event" %} <p><strong>Organizers: </strong>{{ event.Organizers}}</p> {%endif%}
+
         </div>
         <div class="card-action">
-          <strong>{{ event.Room }}  </strong> 
+          <strong>{{ event.Room }}  </strong> <br/>
+          {% if event.Type == "Side Event" %} <strong>Interpretation: </strong>{{event.Languages}}{%endif%} <br/>
+          {% if event.Type == "Side Event" %} <strong>Refreshments: </strong>{{event.Refreshments}}{%endif%}
+
         </div>
       </div>
     </div>
