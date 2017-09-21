@@ -17,6 +17,7 @@
 
 .tabs .tab a{
     color: $green;
+    font-size: 18px;
 }
 .tabs .tab a:hover,.tabs .tab a.active {
 	background-color:transparent;
@@ -32,4 +33,23 @@
 .tabs {
     height: auto;
     padding: 20px;
+}
+.tab{
+    min-width: 18%;
+}
+
+
+.head{
+    width: 100%;
+    min-height: 80vh;
+    background: url(../assets/images/pattern.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

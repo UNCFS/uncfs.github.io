@@ -1,5 +1,5 @@
 ---
 layout: timetable
-title: Schedule
+title: CFS 44 Timetable
 permalink: /
 ---

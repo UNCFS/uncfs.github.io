@@ -1,11 +1,8 @@
-    <div class="row">
     {% for event in site.data.nine %}
-   
-    
-    <div class="col s12">
       <div class="card">
-        {% if event.Type == "Session" %}<div class="card-content blue white-text"> {% endif%}
-                {% if event.Type == "Side Event" %}<div class="card-content green white-text"> {% endif%}
+        <!-- Change color of tile based on color -->
+        {% if event.Type == "Session" %}<div class="card-content blue white-text"> {% else %}<div class="card-content green white-text"> {% endif%}
+        
           <span class="card-title">{{ event.Title }} {% if event.Type == "Side Event" %} - {{ event.Subtitle}} {%endif%}</span>
           <p>{{event.Time}}</p>
           {% if event.Type == "Side Event" %} <p><strong>Organizers: </strong>{{ event.Organizers}}</p> {%endif%}
@@ -18,7 +15,6 @@
 
         </div>
       </div>
-    </div>
     {% endfor %}
     
 
