@@ -1,28 +1,30 @@
     {% for event in site.data.nine %}
-      <div class="card">
-        <!-- Change color of tile based on color -->
-        {% if event.Type == "Session" %}<div class="card-content blue white-text"> {% else %}<div class="card-content teal white-text"> {% endif%}
-        
+<div class="card horizontal">
+    {% if event.Type == "Session" %}
+              <div class="card-image card-session"> <p class="card-type rotate white-text">SESSION</p></div>
+     {%else%} <div class="card-image card-side-event"> <p class="card-type rotate white-text"> SIDE EVENT</p></div> {% endif%}
+
+  <div class="card-stacked">
+        <div class="card-content grey-text text-darken-2"> 
           <span class="card-title">
-            {% if event.Type == "Side Event" %} <strong>{{event.ID}}</strong> {% endif %}
-            
-            
+              <h5 class="grey-text text-darken-3"> {{event.Time}} </h5>
+              
+              <!--ADD SIDE EVENT ID-->
+            {% if event.Type == "Side Event" %} {{event.ID}} {% endif %}
              {{ event.Title }} {% if event.Type == "Side Event" %} - {{ event.Subtitle}} {%endif%}</span>
-          <p>{{event.Time}}</p>
-          <!--IF SIDE EVENT-->
-          {% if event.Type == "Side Event" %} 
-              <p><strong>Organizers: </strong>{{ event.Organizers}}</p> </br> 
+          <p>{% if event.Type == "Side Event" %} 
+              <strong>Organizers: </strong>{{ event.Organizers}} </br> 
               <strong>Interpretation: </strong>{{event.Languages}} <br/>
               <strong>Refreshments: </strong>{{event.Refreshments}}<br/>
           {%endif%}
-              <strong>Room: </strong> {{ event.Room }} <br/>
+              <strong>Room: </strong> {{ event.Room }} <br/> </p>
         </div>
         <div class="card-action">
           <a href="#">MORE</a>
           <a href="#">ADD TO CALENDAR</a>
 
         </div>
-      </div>
+  </div>
+</div>
     {% endfor %}
     
-

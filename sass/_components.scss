@@ -62,3 +62,20 @@
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating){
     color: $green;
 }
+.card-image{
+    width: 100px;
+
+}
+
+.card-session{
+    background: $blue;
+}
+.card-side-event{
+    background: $green;
+}
+.card-type{
+    font-weight: 500;
+    font-size: 21px;
+    position: relative;
+    top: 20%;
+}

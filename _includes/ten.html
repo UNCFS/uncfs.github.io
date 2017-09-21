@@ -1,43 +1,30 @@
-<h5>Coming soon: some real content</h5>
+    {% for event in site.data.nine %}
+<div class="card horizontal">
+    {% if event.Type == "Session" %}
+              <div class="card-image card-session"> <p class="card-type rotate white-text">SESSION</p></div>
+     {%else%} <div class="card-image card-side-event"> <p class="card-type rotate white-text"> SIDE EVENT</p></div> {% endif%}
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <div class="card-stacked">
+        <div class="card-content grey-text text-darken-2"> 
+          <span class="card-title">
+              <h5 class="grey-text text-darken-3"> {{event.Time}} </h5>
+              
+              <!--ADD SIDE EVENT ID-->
+            {% if event.Type == "Side Event" %} {{event.ID}} {% endif %}
+             {{ event.Title }} {% if event.Type == "Side Event" %} - {{ event.Subtitle}} {%endif%}</span>
+          <p>{% if event.Type == "Side Event" %} 
+              <strong>Organizers: </strong>{{ event.Organizers}} </br> 
+              <strong>Interpretation: </strong>{{event.Languages}} <br/>
+              <strong>Refreshments: </strong>{{event.Refreshments}}<br/>
+          {%endif%}
+              <strong>Room: </strong> {{ event.Room }} <br/> </p>
+        </div>
+        <div class="card-action">
+          <a href="#">MORE</a>
+          <a href="#">ADD TO CALENDAR</a>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+  </div>
+</div>
+    {% endfor %}
+    
