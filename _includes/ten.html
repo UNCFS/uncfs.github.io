@@ -1,30 +1,4 @@
-    {% for event in site.data.nine %}
-<div class="card horizontal">
-    {% if event.Type == "Session" %}
-              <div class="card-image card-session"> <p class="card-type rotate white-text">SESSION</p></div>
-     {%else%} <div class="card-image card-side-event"> <p class="card-type rotate white-text"> SIDE EVENT</p></div> {% endif%}
+<h5>Coming soon: some content</h5>
 
-  <div class="card-stacked">
-        <div class="card-content grey-text text-darken-2"> 
-          <span class="card-title">
-              <h5 class="grey-text text-darken-3"> {{event.Time}} </h5>
-              
-              <!--ADD SIDE EVENT ID-->
-            {% if event.Type == "Side Event" %} {{event.ID}} {% endif %}
-             {{ event.Title }} {% if event.Type == "Side Event" %} - {{ event.Subtitle}} {%endif%}</span>
-          <p>{% if event.Type == "Side Event" %} 
-              <strong>Organizers: </strong>{{ event.Organizers}} </br> 
-              <strong>Interpretation: </strong>{{event.Languages}} <br/>
-              <strong>Refreshments: </strong>{{event.Refreshments}}<br/>
-          {%endif%}
-              <strong>Room: </strong> {{ event.Room }} <br/> </p>
-        </div>
-        <div class="card-action">
-          <a href="#">MORE</a>
-          <a href="#">ADD TO CALENDAR</a>
-
-        </div>
-  </div>
-</div>
-    {% endfor %}
-    
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos minus cumque laborum, fugit rem maiores doloribus aspernatur. Similique sequi unde aspernatur, nihil voluptas, cumque doloribus architecto eveniet sed, voluptatem quam!</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos minus cumque laborum, fugit rem maiores doloribus aspernatur. Similique sequi unde aspernatur, nihil voluptas, cumque doloribus architecto eveniet sed, voluptatem quam!</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos minus cumque laborum, fugit rem maiores doloribus aspernatur. Similique sequi unde aspernatur, nihil voluptas, cumque doloribus architecto eveniet sed, voluptatem quam!</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos minus cumque laborum, fugit rem maiores doloribus aspernatur. Similique sequi unde aspernatur, nihil voluptas, cumque doloribus architecto eveniet sed, voluptatem quam!</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos minus cumque laborum, fugit rem maiores doloribus aspernatur. Similique sequi unde aspernatur, nihil voluptas, cumque doloribus architecto eveniet sed, voluptatem quam!</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos minus cumque laborum, fugit rem maiores doloribus aspernatur. Similique sequi unde aspernatur, nihil voluptas, cumque doloribus architecto eveniet sed, voluptatem quam!</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos minus cumque laborum, fugit rem maiores doloribus aspernatur. Similique sequi unde aspernatur, nihil voluptas, cumque doloribus architecto eveniet sed, voluptatem quam!</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos minus cumque laborum, fugit rem maiores doloribus aspernatur. Similique sequi unde aspernatur, nihil voluptas, cumque doloribus architecto eveniet sed, voluptatem quam!</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos minus cumque laborum, fugit rem maiores doloribus aspernatur. Similique sequi unde aspernatur, nihil voluptas, cumque doloribus architecto eveniet sed, voluptatem quam!</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos minus cumque laborum, fugit rem maiores doloribus aspernatur. Similique sequi unde aspernatur, nihil voluptas, cumque doloribus architecto eveniet sed, voluptatem quam!</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos minus cumque laborum, fugit rem maiores doloribus aspernatur. Similique sequi unde aspernatur, nihil voluptas, cumque doloribus architecto eveniet sed, voluptatem quam!</p>
