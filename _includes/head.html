@@ -4,10 +4,12 @@
 
     <title>{{ site.title | escape }}</title>
     <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}" />
-
-  
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--FAVICON -->
+    <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
+    <!--FRAMEWORK-->
     <link rel="stylesheet" type="text/css" media="screen,projection" href="{{ "/assets/materialize.css" | relative_url }}" />
+    <!--CUSTOM STYLING-->
       <link href="{{ site.baseurl }}/sass/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}" />
