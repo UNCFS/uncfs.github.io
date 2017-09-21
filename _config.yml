@@ -15,7 +15,6 @@ author:
     twitter:          UN_CFS
     github:           UNCFS
     medium:           UN_CFS
-    email:           cfs@fao.org
 
 # Timezones
 timezone:           Europe/Rome
@@ -27,5 +26,4 @@ sass:
 
 
 plugins:
-  - jekyll-maps
   - jekyll-email-protect
