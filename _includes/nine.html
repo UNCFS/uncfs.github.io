@@ -1,30 +1,43 @@
-    {% for event in site.data.nine %}
+    {% for event in site.data.data %}
+    {% if event.day == "9-Oct"%}
 <div class="card horizontal">
-    {% if event.Type == "Session" %}
-              <div class="card-image card-session"> <p class="card-type rotate white-text">SESSION</p></div>
-     {%else%} <div class="card-image card-side-event"> <p class="card-type rotate white-text"> SIDE EVENT</p></div> {% endif%}
+    {% if event.event_type == "Session" %}
+              <div class="card-image card-session"> <p class="card-event_type rotate white-text">SESSION</p></div>
+     {%else%} <div class="card-image card-side-event"> <p class="card-event_type rotate white-text"> SIDE EVENT</p></div> {% endif%}
 
   <div class="card-stacked">
         <div class="card-content grey-text text-darken-2"> 
           <span class="card-title">
-              <h5 class="grey-text text-darken-3"> {{event.Time}} </h5>
+              <h5 class="grey-text text-darken-3"> {{event.time}} </h5>
               
               <!--ADD SIDE EVENT ID-->
-            {% if event.Type == "Side Event" %} {{event.ID}} {% endif %}
-             {{ event.Title }} {% if event.Type == "Side Event" %} - {{ event.Subtitle}} {%endif%}</span>
-          <p>{% if event.Type == "Side Event" %} 
-              <strong>Organizers: </strong>{{ event.Organizers}} </br> 
-              <strong>Interpretation: </strong>{{event.Languages}} <br/>
-              <strong>Refreshments: </strong>{{event.Refreshments}}<br/>
+            {% if event.event_type == "Side Event" %} {{event.id}} {% endif %}
+             {{ event.title }} {% if event.event_type == "Side Event" %} - {{ event.subtitle}} {%endif%}</span>
+          <p>{% if event.event_type == "Side Event" %} 
+              <strong>organizers: </strong>{{ event.organizers}} </br> 
+              <strong>Interpretation: </strong>{{event.language}} <br/>
+              <strong>Refreshments: </strong>{{event.refreshments}}<br/>
           {%endif%}
-              <strong>Room: </strong> {{ event.Room }} <br/> </p>
+              <strong>Room: </strong> {{ event.room }} <br/> </p>
         </div>
         <div class="card-action">
-          <a href="#">MORE</a>
-          <a href="#">ADD TO CALENDAR</a>
+         {% if event.event_type == "Side Event" %} <a href="http://www.fao.org/cfs/home/plenary/cfs44/side-events/{{event.id}}/" target="_blank">MORE</a>
+         {% else %}<a href="http://www.fao.org/cfs/home/plenary/cfs44/" target="_blank">MORE</a> {% endif %}
+          <span class="addtocalendar">
+            <var class="atc_event">
+                <var class="atc_date_start">{{ event.start_timestamp}}</var>
+                <var class="atc_date_end">{{ event.end_timestamp}}</var>
+                <var class="atc_timezone">Europe/Rome</var>
+                <var class="atc_title">{{ event.title}} </var>
+                <var class="atc_description">{{ event.subtitle}}</var>
+                <var class="atc_location">FAO </var>
+                {% if event.event_type == "Side Event" %}<var class="atc_organizer">{{event.organizers}}</var> {% else %} <var class="atc_organizer">CFS 44</var> {% endif%}
+            </var>
+        </span>
 
         </div>
   </div>
 </div>
+    {% endif %}
     {% endfor %}
     
