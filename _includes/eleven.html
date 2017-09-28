@@ -12,7 +12,7 @@
               
               <!--ADD SIDE EVENT ID-->
             {% if event.event_type == "Side Event" %} {{event.id}} {% endif %}
-             {{ event.title }} {% if event.event_type == "Side Event" %} - {{ event.subtitle}} {%endif%}</span>
+             {{ event.title }} {% if event.event_type == "Side Event" %}{%endif%}</span>
           <p>{% if event.event_type == "Side Event" %} 
               <strong>organizers: </strong>{{ event.organizers}} </br> 
               <strong>Interpretation: </strong>{{event.language}} <br/>
