@@ -12,7 +12,7 @@
               
               <!--ADD SIDE EVENT ID-->
             {% if event.event_type == "Side Event" %} {{event.id}} {% endif %}
-             {{ event.title }} {% if event.event_type == "Side Event" %}{%endif%}</span>
+             {{ event.title }} {% if event.event_type == "Side Event" %} {%endif%}</span>
           <p>{% if event.event_type == "Side Event" %} 
               <strong>Organizers: </strong>{{ event.organizers}} </br> 
               <strong>Interpretation: </strong>{{event.language}} <br/>
@@ -21,8 +21,8 @@
               <strong>Room: </strong> {{ event.room }} <br/> </p>
         </div>
         <div class="card-action">
-         {% if event.event_type == "Side Event" %} <a href="http://www.fao.org/cfs/home/plenary/cfs44/side-events/{{event.id}}/" target="_blank">MORE</a>
-         {% else %}<a href="http://www.fao.org/cfs/home/plenary/cfs44/" target="_blank">MORE</a> {% endif %}
+         {% if event.event_type == "Side Event" %} <a href="http://www.fao.org/cfs/home/plenary/cfs44/side-events/{{event.id}}/" target="_blank" rel="noopener">MORE</a>
+         {% else %}<a href="http://www.fao.org/cfs/home/plenary/cfs44/" target="_blank" rel="noopener">MORE</a> {% endif %}
           <span class="addtocalendar">
             <var class="atc_event">
                 <var class="atc_date_start">{{ event.start_timestamp}}</var>
