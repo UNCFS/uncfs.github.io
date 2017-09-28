@@ -64,7 +64,9 @@
 }
 .card-image{
     width: 100px;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card-session{
@@ -75,9 +77,8 @@
 }
 .card-type{
     font-weight: 500;
-    font-size: 21px;
-    position: relative;
-    top: 20%;
+    font-size: 26px;
+
 }
 
 /**
@@ -146,4 +147,9 @@
     cursor: pointer;
     text-decoration: none;
     outline: none;
+}
+.social-icon{
+    width: 30px;
+    height: 30px;
+    margin: 5px;
 }

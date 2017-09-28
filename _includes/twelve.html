@@ -14,7 +14,7 @@
             {% if event.event_type == "Side Event" %} {{event.id}} {% endif %}
              {{ event.title }} {% if event.event_type == "Side Event" %} {%endif%}</span>
           <p>{% if event.event_type == "Side Event" %} 
-              <strong>organizers: </strong>{{ event.organizers}} </br> 
+              <strong>Organizers: </strong>{{ event.organizers}} </br> 
               <strong>Interpretation: </strong>{{event.language}} <br/>
               <strong>Refreshments: </strong>{{event.refreshments}}<br/>
           {%endif%}

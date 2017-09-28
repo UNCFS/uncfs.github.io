@@ -1,5 +1,12 @@
 @charset "utf-8";
 
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500');
+
+
+html{
+    font-family: "Montserrat", "Roboto", Helvetica, "Helvetica Neue", Arial, sans-serif;
+}
+
 h1, h2, h3, h4, h5, h6 {
     -webkit-font-smoothing: antialiased;
 }
