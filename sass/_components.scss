@@ -14,11 +14,26 @@
     opacity: .8;
 }
 // HEAD PANEL 
-
-.head{
+.no-webp .head{
     width: 100%;
     min-height: 75vh;
     background: url(../assets/images/pattern.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.webp .head{
+    width: 100%;
+    min-height: 75vh;
+    background: url(../assets/images/pattern.webp) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
