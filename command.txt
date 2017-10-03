@@ -1,2 +1,3 @@
 jekyll serve --host $IP --port $PORT --baseurl ''
 
+gsjson 1pNtskiZJhjOlCu_XxysbL6a6W1Gi1s3zARXssW1d7W8 _data/data-min.json
