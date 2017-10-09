@@ -22,6 +22,7 @@
         </div>
         <div class="card-action">
          {% if event.event_type == "Side Event" %} <a href="http://www.fao.org/cfs/home/plenary/cfs44/side-events/{{event.id}}/" target="_blank" rel="noopener">MORE</a>
+         {% elsif event.id == "Special Event" %} <a href="http://www.fao.org/partnerships/events-archive/details-events/en/c/1027544/" target="_blank" rel="noopener"> MORE</a>
          {% else %}<a href="http://www.fao.org/cfs/home/plenary/cfs44/" target="_blank" rel="noopener">MORE</a> {% endif %}
           <span class="addtocalendar">
             <var class="atc_event">
